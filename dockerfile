@@ -22,7 +22,7 @@ RUN mkdir /root/app
 
 COPY app.R /root/shiny_save
 
-EXPOSE 80
+EXPOSE 3838
 
-# RUN dos2unix /usr/bin/shiny-server.sh && apt-get --purge remove -y dos2unix && rm -rf /var/lib/apt/lists/*
-CMD ["R", "-e", "shiny::runApp('/root/shiny_save', host='0.0.0.0', port=80)"]
+# RUN 
+CMD ["R", "-e", "shiny::runApp('/root/shiny_save', host='0.0.0.0', port=3838)"]
