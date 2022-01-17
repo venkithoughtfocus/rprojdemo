@@ -9,9 +9,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libsqlite3-dev \
     libmariadb-dev \
     libpq-dev \
-    libssh2-l-dev \
-    unixodbc-dev \
-    libcurl4-openssl-dev \
     libssl-dev
 
 ## Update system libraries
